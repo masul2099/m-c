@@ -59,7 +59,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="question.gif" id="reaction">
+        <img src="gif/question.gif" id="reaction">
         <div class="question"><h3 id="question">Mocinha, gostarias de celebrar o dia 14 comigo?</h3></div>
         <div class="buttons" id="buttons">
         <button id="yes" onclick="yes()">Sim</button>
@@ -79,7 +79,7 @@
 
     if (y == 1) {
         document.getElementById("question").style.display = "block";
-        document.getElementById("reaction").src = "bomb.gif";
+        document.getElementById("reaction").src = "gif/bomb.gif";
         document.getElementById("question").innerHTML = "Te Quero, Gostosa!";
         document.getElementById("yes").innerHTML = "Me Leva, Maravilhoso";
         document.getElementById("reaction").style.width = "150px"; 
@@ -88,7 +88,7 @@
 
     if (y > 1) {
 
-        document.getElementById("reaction").src = "yes.gif";
+        document.getElementById("reaction").src = "gif/yes.gif";
         document.getElementById("reaction").style.width = "200px"; 
         document.getElementById("yes").style.display = "none";  
         document.getElementById("question").innerHTML = "Em 3";
@@ -113,7 +113,7 @@
              n = n + 1;
 
              if (n%2 == 1) {
-                document.getElementById("reaction").src = "what.gif";
+                document.getElementById("reaction").src = "gif/what.gif";
                 document.getElementById("reaction").style.width = "200px";
                 document.getElementById("question").innerHTML = "Porque?"; 
                 document.getElementById("yes").style.display = "none"; 
@@ -122,7 +122,7 @@
 
              
              if (n%2 == 0) {
-                document.getElementById("reaction").src = "sad.gif";
+                document.getElementById("reaction").src = "gif/sad.gif";
                 document.getElementById("yes").style.display = "block"; 
                 document.getElementById("reaction").style.width = "250px"; 
                 document.getElementById("question").innerHTML = "Mocinha...";
